@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 
 {% block title %}Connexion{% endblock %}
-{% block bodyId %}loginPage{% endblock %}
+{% block bodyId %}
+loginPage
+{% endblock %}
+
+{% block navbar %} {% include "navbar.html" %} {% endblock %}
+
+<header class="col-xl-12">
+	
+</header>
 
 {% block content %}
-<form action="login" method="post">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<div>
-		<input type="submit" value="Connexion"/>
-		<a href="???" id="forgetPassword" font-size="30px">I forgot my password</a>
-	</div>
-	
-</form>
+<section id="loginForm" class="offset-xl-3 col-xl-6">
+	<form action="login" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<div>
+			<input type="submit" value="Connexion"/>
+			<a href="#" id="forgetPassword" font-size="30px">I forgot my password</a>
+		</div>
+	</form>
+</section>
 {% endblock %}

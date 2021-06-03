@@ -35,4 +35,5 @@ def login(request):
         return render(request, 'login.html', {'form': form})
     
     
-    
+def home(request):
+    return render(request, 'home.html')

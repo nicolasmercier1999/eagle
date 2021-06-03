@@ -11,17 +11,17 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	font-size: 15px;
-	color: #ffffff;
-	background-color: #006600;
+	font-size: 1rem;
+	color: white;
+	background-color: green;
 }
 
-body, #loginPage, section, #content {
+#loginPage, #content {
 	position:absolute;
 	top: 150px;
 	left: 50%;
 	width: 500px;
-	margin: 0 0 0 -250px;
+	/*margin: 0 0 0 -250px;*/
 	padding: 0;
 }
 
@@ -51,6 +51,11 @@ form input[type="submit"] {
 	text-align: center;
 }
 
+#loginForm
+{
+	margin-top: 50vh;
+}
+
 a {
 	color: #3b5998;
 }
@@ -64,4 +69,50 @@ ul.errorlist {
 	padding: 0;
 	list-style-type: none;
 	color: #ff3333;
+}
+
+nav > div > div
+{
+	justify-content: space-evenly;
+}
+
+nav.navbar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	background-color: darkgreen;
+	font-size: 1rem;
+
+	height: 8rem;
+}
+
+nav .nav-link, nav .nav-title
+{
+	color: lightgray;
+	text-align: center;
+}
+
+nav .nav-link:hover
+{
+	color: white;
+}
+
+nav .nav-title
+{
+	font-size: 1.6rem;
+	padding: .2rem 3rem;
+	margin: auto 0;
+}
+
+nav.navbar + *
+{
+	margin-top: 8rem;
+}
+
+aside
+{
+	background-color: lightgray;
 }

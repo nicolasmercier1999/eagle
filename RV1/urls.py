@@ -21,7 +21,7 @@ from django.urls import path
 # Use to map urls with python function
 from django.conf.urls import url
 # Use to have access to python functions that load the templates
-from RV1.views import welcome, login
+from RV1.views import welcome, login, home
 
 """ url('regexp', f) --> url(^welcome$, project.views.welcome)
         regexp   = url / string after "www.project.com/"
@@ -32,5 +32,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$', login),
     url('^welcome$', welcome),
-    url('^login$', login)
+    url('^login$', login),
+    url('^home$', home)
 ]
