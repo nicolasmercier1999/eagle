@@ -17,15 +17,21 @@
 
         {% fontawesome_5_static %}
     </head>
-    <body id="{% block bodyId %}defaultBodyId{% endblock %}">
+    <body id="{% block bodyId %}defaultBodyId{% endblock %}" class="overflow-hidden">
         {% block navbar %}{% endblock %}
 
 	    {% block headerContent %} {% endblock %}
 
-        <div class="container">
+        <div class="row mx-0">
             {% block aside %}{% endblock %}
 
     		{% block content %}{% endblock %}
+
+            {% block footer %}
+            <footer>
+                2021
+            </footer>
+            {% endblock %}
             
         </div>
     </body>

@@ -37,3 +37,6 @@ def login(request):
     
 def home(request):
     return render(request, 'home.html')
+
+def courses(request):
+    return render(request, 'courses.html')

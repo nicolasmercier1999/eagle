@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Cours{% endblock %}
+{% block bodyId %}
+courses
+{% endblock %}
+
+{% block navbar %} {% include "navbar.html" %} {% endblock %}
+
+{% block aside %}
+<aside class="row col-4 p-0">
+	<div class="tree-level-1 module-container overflow-scroll col">
+		<ul class="row list-unstyled">
+			<li class="course-element module">Module 1</li>
+			<li class="course-element module">Module 2</li>
+			<li class="course-element module">Module 3</li>
+			<li class="course-element module">Module 4</li>
+		</ul>
+	</div>
+
+	<div class="tree-level-2 module-container overflow-scroll col">
+		<ul class="row list-unstyled">
+			<li class="course-element chapter">Chapter 1</li>
+			<li class="course-element chapter">Chapter 2</li>
+			<li class="course-element chapter">Chapter 3</li>
+			<li class="course-element chapter">Chapter 4</li>
+			<li class="course-element chapter">Chapter 5</li>
+		</ul>
+	</div>
+</aside>
+{% endblock %}
+
+{% block content %}
+<section class="main-content overflow-scroll col-8">
+	<div class="course-container">
+		<h1>Cours 1</h1>
+		<h2>Titre 1</h2>
+		
+		<h3>Contenu :</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id pulvinar elit, et viverra ligula. Praesent vehicula auctor tortor nec vehicula. Etiam auctor ex ut luctus venenatis. Nunc a iaculis ante. Sed consectetur erat nec turpis volutpat, ut blandit massa pulvinar. Etiam varius nec diam sed fringilla. Donec rutrum, arcu id suscipit convallis, ante turpis pharetra turpis, eget feugiat lorem libero ac tortor. Praesent dignissim sollicitudin aliquet. Nunc sed ex sed nulla vehicula accumsan. Nullam consectetur neque sit amet semper sollicitudin. Integer ut tincidunt orci. Sed rhoncus efficitur nulla non fringilla. Pellentesque vitae egestas felis, eget lobortis diam. Maecenas quam sem, consectetur nec cursus a, mollis a tellus. Curabitur convallis massa non nisl rutrum, gravida posuere dolor volutpat.</p>
+		
+		<h3><i class="fas fa-paperclip"></i> Documents :</h3>
+		<ul>
+			<li>Sujet PDF</li>
+			<li>Datasheet</li>
+		</ul>
+	</div>
+
+	<div class="course-container">
+		<h1>Cours 2</h1>
+		<h2>Titre 2</h2>
+
+		<h3>Contenu : </h3>
+		<p>Vestibulum nisl ante, euismod non porta et, convallis eu dui. Ut id odio sed nisi facilisis commodo ut id mauris. Quisque pulvinar urna id sem sodales dictum. Suspendisse interdum, dui in venenatis rhoncus, lacus elit gravida urna, non feugiat ante sem at felis. Donec eu cursus elit. Suspendisse quis consectetur lacus. Nam pharetra, leo vel venenatis commodo, felis ipsum tempus lacus, at volutpat augue elit id massa. Aliquam facilisis velit ut metus laoreet, ut blandit nibh venenatis. Fusce dignissim mauris lectus, eu consectetur elit fermentum sit amet. Quisque mollis leo non purus sodales suscipit. Quisque sed quam lacinia ipsum placerat accumsan vitae ut enim. Nam luctus rhoncus euismod.</p>
+		
+		<h3><i class="fas fa-paperclip"></i> Documents :</h3>
+		<ul>
+			<li>Sujet PDF</li>
+			<li>Datasheet</li>
+		</ul>
+	</div>
+</section>
+{% endblock %}
